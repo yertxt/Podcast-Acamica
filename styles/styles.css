@@ -1,0 +1,486 @@
+/* Margenes Estrutura */
+.container{
+    padding: 10px 20px;
+}
+
+.EPPAD{
+    padding: 10px 15px;
+}
+
+.pad2{
+    padding-bottom: 35px;
+}
+.pad1{
+    padding: 10px 0px;
+
+}
+
+.padbot{
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.space-icons{
+    padding: 20px;
+}
+
+
+span{
+    text-decoration: line-through;
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    
+}
+iframe{
+    width: 100%;
+    height: 232px;
+    border: 0;
+    background-color: transparent;
+}
+/* utilidades */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.marg-fluid{
+    margin: auto;
+}
+
+.mar5{
+    margin-bottom: -5px;
+}
+
+.mar100{
+    margin-bottom: -110px;
+}
+
+.text-cc{
+  text-align: center;
+}
+.container-fluid{
+    padding: 0;
+}
+
+.f-r{
+    float: right;
+}
+
+.img-fluid{
+    width: 100%;
+    
+}
+
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Grid  <----> Escalados */
+.container .column-1{
+    box-sizing: border-box;
+    width: 8.3%;
+
+}
+.container .column-2{
+    box-sizing: border-box;
+    width: calc(8.3% * 2);
+
+}
+.container .column-3{
+    box-sizing: border-box;
+    width: calc(8.3% * 3);
+
+}
+.container .column-4{
+    box-sizing: border-box;
+    width: calc(8.3% * 4);
+
+}
+.container .column-5{
+    box-sizing: border-box;
+    width: calc(8.3% * 5);
+
+}
+.container .column-6{
+    box-sizing: border-box;
+    width: calc(8.3% * 6);
+
+}
+.container .column-7{
+    box-sizing: border-box;
+    width: calc(8.3% * 7);
+
+}
+.container .column-8{
+    box-sizing: border-box;
+    width: calc(8.3% * 8);
+
+}
+.container .column-9{
+    box-sizing: border-box;
+    width: calc(8.3% * 9);
+
+}
+.container .column-10{
+    box-sizing: border-box;
+    width: calc(8.3% * 10);
+
+}
+.container .column-11{
+    box-sizing: border-box;
+    width: calc(8.3% * 11);
+
+}
+.container .column-12{
+    box-sizing: border-box;
+    width: calc(8.3% * 12);
+
+}
+
+/* Estilo header */
+
+.menu, #menu-toggle, 
+#menu-toggle + .column-11 .fa-close {
+    display: none;
+}
+
+#menu-toggle:checked + .column-11 + .menu, 
+#menu-toggle:checked + .column-11 .fa-close{
+    display: initial;
+}
+
+#menu-toggle:checked + .column-11 .fa-bars{
+    display: none;
+
+}
+.menu ul {
+    list-style-type: none;
+    background: #0000EC;
+    font-family: Textito;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+.menu ul li{
+    padding: 14px;
+
+}
+
+
+/* Estilos Episodios */
+.episodios .clipped-background{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    color: #ffffff;
+    padding: 100px 20px;
+    clip-path: polygon(100% 0, 100% 93%, 0 100%, 0 7%);
+}
+
+
+/* Estilo Footer */
+.fotter{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    color: #ffffff;
+    padding: 50px 20px;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 25%);
+}
+
+/*  Estilo Titulos */
+@font-face{
+    font-family: Titulos;
+    src: url("../fonts/IBM_Plex_Sans/IBMPlexSans-Light.ttf");
+}
+
+@font-face{
+    font-family: Titulos2;
+    src: url("../fonts/IBM_Plex_Sans/IBMPlexSans-ExtraLight.ttf");
+}
+
+@font-face{
+    font-family: TitulosEP;
+    src: url("../fonts/IBM_Plex_Sans/IBMPlexSans-SemiBold.ttf");
+}
+
+.t1{
+    font-family: Titulos;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+.t1b{
+    font-family: Titulos2;
+    font-size: 36px;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+.t1bc{
+    font-family: Titulos2;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 42px;
+    
+}
+
+.tEP{
+    font-family: TitulosEP;
+    font-size: 18px;
+    color: #060A24;
+    letter-spacing: 0;
+}
+
+/* Estilos Texto */
+@font-face{
+    font-family: Textito;
+    src: url("../fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf");
+}
+.tex1{
+    font-family: Textito;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+/*  Estilo Botones */
+@font-face{
+    font-family: Butte;
+    src: url("../fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf");
+}
+.buts{
+    font-family: Butte;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    background-color: #00F3BB;
+    border: none;
+    padding: 13px 96px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.buts:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    font-family: Butte;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+    
+}
+
+
+.buts2{
+    font-family: Butte;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    background-color: #00F3BB;
+    border: none;
+    padding: 13px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.buts2:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    font-family: Butte;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+    
+}
+
+.imgtrasy{
+    transform: translateY(-110px);
+}
+
+/* Responsive */
+
+
+@media screen and (min-width: 639px){
+    label{
+        display: none;
+    }
+
+    div.menu {
+        display: initial;
+        
+    }
+
+    div.menu ul{
+        display: flex;
+        list-style-type: none;
+        font-family: Textito;
+        background: none;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 28px;
+        justify-content: flex-end;
+        transform: translateY(-60px);
+    }
+
+    div.menu ul li:hover{
+        color: #00F3BB;
+        text-decoration: line-through;
+        cursor: pointer;
+    }
+    div.menu ul li:active{
+        color: #909397;
+        text-decoration: line-through;
+        cursor: pointer;
+    }
+    
+}
+
+@media screen and (min-width: 376px){
+    button.but1 {
+        margin: auto;
+        margin-left: 0px;
+    }
+    button.but2 {
+        margin: auto;
+        padding: 10px 45px;
+    }
+}
+
+@media screen and (min-width: 769px){
+
+    .imgtam{
+        width: 370.6px;
+        height: 570px;
+
+    }
+
+    .InvResP{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .InvRes{
+        width: calc(8.3% * 4);
+    }
+    .two{
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        
+    }
+    .one{
+        width: calc(8.3% * 4);
+        padding-bottom: 50px;
+        
+    }
+    .rowR{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        
+    }
+
+    div.column-12.column.marg-fluid{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px;
+    }
+    div.column-12.horizontal.pad2{
+        padding: 0px;
+    }
+
+    div.column-12.horizontal.pad2 a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px;
+        text-decoration: none;
+    }
+    .fotpad{
+        padding-left: 30px;
+    }
+    br{
+        display: none;
+    }
+
+    .alignRV{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .alignR{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .widthT{
+        width: 40%;
+    }
+
+    .textFluid{
+        margin: auto;
+        width: 150px;
+    }
+  
+}
+
+ @media screen and (min-width: 950px){
+    .marRes{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .iconMR{
+        margin-left:  30px;
+    }
+
+    /* .iconosRES{
+        width: 100px;
+        height: 50px;
+    }
+     */
+} 
+
+
+
+
+
+
